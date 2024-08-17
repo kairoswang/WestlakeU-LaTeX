@@ -1,0 +1,82 @@
+% Project:  WestlakeU-LaTex
+% main.tex - main cover letter template
+% content.tex - the body of cover letter 
+
+
+\documentclass[12pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{eso-pic}
+\usepackage{charter}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage{hyperref}
+\usepackage{microtype}
+
+
+% ------------------------------------
+% Define new commands for personal information
+\newcommand{\sender}{Kairos Wang} % name
+\newcommand{\recipient}{Prof. XXX} % recipient
+\newcommand{\university}{Westlake University} % university
+\newcommand{\street}{600 Dunyu Rd., Xihu District, Hangzhou} % address
+\newcommand{\city}{Zhejiang} % city
+\newcommand{\country}{PR China} % country
+\newcommand{\zip}{310000} % zip code
+\newcommand{\email}{xxx@xxx.edu.cn} % email
+% ------------------------------------
+
+
+\geometry{a4paper, margin=1in}
+\pagestyle{empty}
+\begin{document}
+% ------------------------------------
+% letter header
+\begin{flushleft}
+    \vspace{0.1in}
+    \includegraphics[width=2in]{figures/logo.png}
+    \vspace{0.1in}
+\end{flushleft}
+\vspace{-0.3in}
+\rule{\linewidth}{1.5pt} % horizontal rule
+% ------------------------------------
+
+
+% ------------------------------------
+% contact information
+\begin{flushright}
+\today \\
+\vspace{0.1in}
+\sender \\
+Email: \href{mailto:\email}{\email} \\
+\street \\
+\city, \country, \zip \\
+\end{flushright}
+% ------------------------------------
+
+
+% ------------------------------------
+% the main body of this letter 
+\begin{flushleft}
+Dear \recipient,
+\end{flushleft}
+
+{\setlength{\parindent}{20pt}
+\input{content}}
+% ------------------------------------
+
+
+% ------------------------------------
+% sender's final remarks.
+\vfill
+\begin{flushleft}
+Kind Regards, \\
+\vspace{0.1in}
+\includegraphics[width=1.5in]{figures/sign.png} \\
+\vspace{0.1in}
+School of Engineering, \university \\
+\end{flushleft}
+% ------------------------------------
+
+
+\end{document}
