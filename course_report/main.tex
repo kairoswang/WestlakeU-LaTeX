@@ -1,0 +1,110 @@
+% Project:  WestlakeU-LaTex
+% main.tex - main template
+% content.tex - the body of course report 
+
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{times}
+\usepackage{microtype}
+\usepackage{indentfirst}
+\usepackage{array} % for customizing the table
+\usepackage{float}
+\usepackage{caption}
+\usepackage{booktabs} % for better quality horizontal lines
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage[style=nature]{biblatex}
+
+
+% ------------------------------------
+% define new commands
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\ttdefault}{cmtt}
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+\newcommand{\name}{XXX XXX}
+\newcommand{\ID}{xxxxxx}
+\newcommand{\school}{Westlake University}
+% ------------------------------------
+
+
+\hypersetup{ % play with the different link colors here
+    colorlinks,
+    citecolor=blue,
+    filecolor=blue,
+    linkcolor=blue,
+    urlcolor=blue
+}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.98,0.98,0.98}
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour}, % background color
+    commentstyle=\color{codegreen},     % comment style
+    keywordstyle=\color{magenta},       % keyword style
+    numberstyle=\tiny\color{codegray},  % number style
+    stringstyle=\color{codepurple},     % string literal style
+    basicstyle=\ttfamily\footnotesize,  % font style
+    breakatwhitespace=false,            % automatic breaks only at whitespace
+    breaklines=true,                    % automatic line breaking only at whitespace
+    captionpos=b,                       % caption-position is bottom
+    keepspaces=true,                    % keeps spaces in text
+    numbers=none,                       % where to put the line-numbers
+    numbersep=5pt,                      % how far the line-numbers are from the code
+    showspaces=false,                   % show spaces adding particular underscores
+    showstringspaces=false,             % underline spaces within strings
+    showtabs=false,                     % show tabs within strings adding particular underscores
+    tabsize=2,                          % sets default tabsize to 2 spaces
+    frame=single,                       % adds a frame around the code
+    rulecolor=\color{codegray},         
+    framerule=0pt,                      % frame thickness
+    abovecaptionskip=1em,
+    belowcaptionskip=1em
+}
+\lstset{style=mystyle}
+\setcounter{secnumdepth}{3}
+\addbibresource{references.bib}
+
+
+% ------------------------------------
+% titlepage
+\begin{document}
+\begin{titlepage}
+    % logo
+    \centering
+    \includegraphics[width=0.42\textwidth]{figures/logo.png}                
+    \\ [2.5cm]
+    % primary title and subtitle
+    \large \textsc{Subtitle \\ Course paper} 
+                        \\ [2.5cm]
+    \HRule{0.5pt} 
+    \LARGE \textbf{Primary Title}	% Title
+    \HRule{2pt}         \\ [2.5cm]		
+
+    % personal information
+    \large 
+    Name: \name         \\ [10pt]
+    Campus ID: \ID      \\ [10pt]
+    \school             \\ [10pt]		
+    \normalsize \today  \\ [10pt]
+\end{titlepage}
+% ------------------------------------
+
+
+% ------------------------------------
+% main body
+\newpage
+\input{content.tex}
+% ------------------------------------
+
+
+\end{document}

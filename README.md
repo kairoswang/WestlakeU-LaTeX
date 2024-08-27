@@ -9,6 +9,11 @@ Westlake University LaTeX Project
     ├── main.tex
     ├── content.tex
     └── figures
+└── course report
+    ├── main.tex
+    ├── content.tex
+    ├── references.bib
+    └── figures
 ```
 
 
@@ -27,4 +32,4 @@ If you find any issues or have suggestions for improvements, please feel free to
 
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the LPPL-1.3c License. See the [LICENSE](LICENSE) file for more details.
