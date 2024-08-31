@@ -1,10 +1,10 @@
 # WestlakeU-LaTex
-This repository contains some LaTeX templates for creating documents related to Westlake University. These templates are designed to be user-friendly and customizable, helping you to maintain a consistent and professional look across various academic documents.
+This repository contains some LaTeX templates for creating documents related to WestlakeU. These templates are designed to be user-friendly and customizable, helping you to maintain a consistent and professional look across various academic documents.
 
 
 ## Project Structure
 ```markdown
-Westlake University LaTeX Project
+WestlakeU LaTeX Project
 └── cover letter
     ├── main.tex
     ├── content.tex
@@ -15,6 +15,7 @@ Westlake University LaTeX Project
     ├── references.bib
     └── figures
 ```
+P.S. Beamer is coming soon!
 
 
 ## Requirements
